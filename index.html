@@ -23,7 +23,7 @@
                 -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.60);
                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.60);
             }
-            h1 {
+            h3 {
                 font-size: 4em;
                 color: white;
                 letter-spacing: 2px;
@@ -40,19 +40,38 @@
                 letter-spacing: 2px;
                 pointer-events: none;
             }
+            .header {
+                background-color: #586274; 
+                text-align: center; 
+                padding: 0px;
+                position: relative;
+            }
+            @media (max-width: 768px) {
+                .header {
+                    min-height: 500px;
+                    font-size: 14px;
+                }
+            }
+            .canvas {
+                width: 100%; 
+                height: 300px;  
+            }
+            @media (max-width: 768px) {
+                #canvas {
+                    display: none;
+                }
+            }
         </style>
-        <div class="hidden-sm hidden-xs">
-            <div style="background-color: #586274; text-align: center; padding: 0px;">
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <h1>
-                        <img src="image/lucasnck.jpg" class="profile-photo">
-                        <br>
-                        lucasnck
-                    </h1>
-                </a>
-            </div>
-            <canvas id="canvas" style="width: 100%; height: 90vh;"></canvas>
+        <div class="header">
+            <a href="#" style="color: #fff; text-decoration: none;">
+                <h3>
+                    <img src="image/lucasnck.jpg" class="profile-photo">
+                    <br>
+                    Lucas Ribeiro
+                </h3>
+            </a>
         </div>
+        <canvas id="canvas" class="canvas"></canvas>
         <script src="js/canvas.js"></script>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -63,7 +82,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="lucasnck.github.io">Lucas Ribeiro</a>
+                    <a class="navbar-brand" href="lucasnck.github.io">lucasnck</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -89,8 +108,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
+                                <span style="font-size: 200px; color: #888;" class="fa fa-gear fa-5x"></span>
                                 <h5>Web Artifact Generator</h5>
-                                <span style="font-size: 200px;" class="fa fa-gear fa-5x"/>
                             </div>
                         </div>
                     </div>
@@ -100,8 +119,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <h5>FarmUP</h5>
                                 <img src="image/FarmUP.png" alt="..." width="200" height="200">
+                                <h5>FarmUP</h5>
                             </div>
                         </div>
                     </div>
@@ -111,8 +130,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <h5>uCODE</h5>
                                 <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <h5>uCODE</h5>
                             </div>
                         </div>
                     </div>
@@ -122,8 +141,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <h5>eXparser</h5>
                                 <img src="image/eXparser.png" alt="..." width="200" height="200">
+                                <h5>eXparser</h5>
                             </div>
                         </div>
                     </div>
@@ -133,19 +152,41 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <h5>uMED</h5>
+                                <img src="image/ProjectParser.png" alt="..." width="200" height="200">
+                                <h5>ProjectParser</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <span style="font-size: 200px; color: #888;" class="fa fa-tree fa-5x"></span>
+                                <h5>ID3</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
                                 <img src="image/uMED.png" alt="..." width="200" height="200">
+                                <h5>uMED</h5>
                             </div>
                         </div>
                     </div>
                 </a>
-                
+
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <h5>creators</h5>
                                 <img src="image/creators.png" alt="..." width="200" height="200">
+                                <h5>creators</h5>
                             </div>
                         </div>
                     </div>
@@ -155,8 +196,30 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <h5>tutorials</h5>
+                                <span style="font-size: 200px; color: #888;" class="fa fa-coffee fa-5x"></span>
+                                <h5>uCOFFEE</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <span style="font-size: 200px; color: #888;" class="fa fa-dollar fa-5x"></span>
+                                <h5>BID</h5>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
                                 <img src="image/tutorials.png" alt="..." width="200" height="200">
+                                <h5>tutorials</h5>
                             </div>
                         </div>
                     </div>
@@ -192,7 +255,7 @@
                     <div class="col-lg-3">
                         <div class="panel panel-primary panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/artigo2.jpg" alt="..." width="200" height="200">
                             </div>
                             <div class="panel-body">
                                 <h4>Primary Stage - 24º SIICUSP - Gerador de Artefatos Web compatível com IDE Desktop</h4>
@@ -206,7 +269,7 @@
                     <div class="col-lg-3">
                         <div class="panel panel-primary panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/artigo3.jpg" alt="..." width="200" height="200">
                             </div>
                             <div class="panel-body">
                                 <h4>Article 2º FATEC Congress - Gerador de Artefatos e Projetos</h4>
@@ -232,11 +295,11 @@
                     <div class="col-lg-3">
                         <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/sesp.png" alt="..." width="200" height="200">
                             </div>
                             <div class="panel-body">
-                                <h4>Article 24º SIICUSP - International Stage - Web Artifacts Generator support IDE Desktop</h4>
-                                <p>The platform form managering all contents of the enterprise</p>
+                                <h4>Secretaria da Educação do Estado de São Paulo</h4>
+                                <p>Servidor Público Efetivo</p>
                             </div>
                         </div>
                     </div>
@@ -246,39 +309,39 @@
                     <div class="col-lg-3">
                         <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/fatec.png" alt="..." width="200" height="150">
                             </div>
                             <div class="panel-body">
-                                <h4>Article 24º SIICUSP - International Stage - Web Artifacts Generator support IDE Desktop</h4>
-                                <p>The platform form managering all contents of the enterprise</p>
+                                <h4>Fatec Lins</h4>
+                                <p>Monitor de Estrutura de Dados</p>
                             </div>
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/tnt.png" alt="..." width="200" height="150">
                             </div>
                             <div class="panel-body">
-                                <h4>Article 24º SIICUSP - International Stage - Web Artifacts Generator support IDE Desktop</h4>
-                                <p>The platform form managering all contents of the enterprise</p>
+                                <h4>TNT Technology</h4>
+                                <p>Empresa de desenvolvimento de softwares</p>
                             </div>
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/fundap.png" alt="..." width="200" height="50">
                             </div>
                             <div class="panel-body">
-                                <h4>Article 24º SIICUSP - International Stage - Web Artifacts Generator support IDE Desktop</h4>
-                                <p>The platform form managering all contents of the enterprise</p>
+                                <h4>FUNDAP</h4>
+                                <p>Programa de Estágio do Governo do Estado de São Paulo</p>
                             </div>
                         </div>
                     </div>
@@ -298,173 +361,381 @@
 
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
+                        <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/java.png" alt="..." width="200" height="200">
                             </div>
-                            <div class="panel-body">
-                                <h3>Java</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Java</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-danger panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/hibernate.svg" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Hibernate</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/jsf.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>JSF</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-green panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/android.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Android</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-black panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/PostgreSQL.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>PostgreSQL</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-info panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/JQuery.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>JQuery</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-brown panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/javascript.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>JavaScript</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-danger panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/html5.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>HTML5</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-info panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/CSS3.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>CSS3</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-black panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/Primefaces.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Primefaces</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/Bootstrap.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Bootstrap</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-warning panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <h1 style="padding: 3px;">JPA</h1>
                             </div>
-                            <div class="panel-body">
-                                <h3>Hibernate</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>JPA</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-warning panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <h1 style="padding: 3px;">Criteria API</h1>
                             </div>
-                            <div class="panel-body">
-                                <h3>JPA</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Criteria API</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-green panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/MVC.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>MVC</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/UML.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>UML</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/SCRUM.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>SCRUM</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-black panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/JSON.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>JSON</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-danger panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/Apache.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Apache</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/Glassfish.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Glassfish</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-info panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/PostgreSQL.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>PostgreSQL</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/Oracle.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Oracle</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-green panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/restful.png" alt="..." width="200" height="200">
+                            </div>
+<!--                            <div class="panel-body">
+                                <h1>JAX-RS</h1>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-warning panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/Fireworks.png" alt="..." width="200" height="200">
                             </div>
-                            <div class="panel-body">
-                                <h3>Criteria API</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Fireworks</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-warning panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/Photoshop.png" alt="..." width="200" height="200">
                             </div>
-                            <div class="panel-body">
-                                <h3>JSON</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Photoshop</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
+                        <div class="panel panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/Word 2016.png" alt="..." width="200" height="200">
                             </div>
-                            <div class="panel-body">
-                                <h3>JavaScript</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Word 2016</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
+                        <div class="panel panel-green panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/Excel 2016.png" alt="..." width="200" height="200">
                             </div>
-                            <div class="panel-body">
-                                <h3>CSS3</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Excel 2016</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
+                        <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/Windows.png" alt="..." width="200" height="200">
                             </div>
-                            <div class="panel-body">
-                                <h3>HTML5</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Windows</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
+                        <div class="panel panel-black panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/Linux.png" alt="..." width="200" height="200">
                             </div>
-                            <div class="panel-body">
-                                <h3>AngularJS</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>Linux</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
+                
                 <a href="#" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
+                        <div class="panel panel-danger panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                                <img src="image/UBUNTU.png" alt="..." width="200" height="200">
                             </div>
-                            <div class="panel-body">
-                                <h3>UML</h3>
-                            </div>
+<!--                            <div class="panel-body">
+                                <h1>UBUNTU</h1>
+                            </div>-->
                         </div>
                     </div>
                 </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow" >
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h3>PostgreSQL</h3>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow" >
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h3>XML/XHTML</h3>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h3>JQuery</h3>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
+                
             </div>
 
         </div>
