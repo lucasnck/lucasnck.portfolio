@@ -5685,6 +5685,66 @@ button.list-group-item-danger.active:focus {
 .panel-group .panel-footer + .panel-collapse .panel-body {
     border-bottom: 1px solid transparent;
 }
+
+/*custom*/
+
+.panel-black {
+    border-color: transparent;
+}
+.panel-black > .panel-heading {
+    color: #ebebeb;
+    background-color: #333;
+    border-color: transparent;
+}
+.panel-black > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: transparent;
+}
+.panel-black > .panel-heading .badge {
+    color: #ebebeb;
+    background-color: #333333;
+}
+.panel-black > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: transparent;
+}
+
+.panel-green {
+    border-color: transparent;
+}
+.panel-green > .panel-heading {
+    color: #ebebeb;
+    background-color: #5fb92f;
+    border-color: transparent;
+}
+.panel-green > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: transparent;
+}
+.panel-green > .panel-heading .badge {
+    color: #ebebeb;
+    background-color: #5fb92f;
+}
+.panel-green > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: transparent;
+}
+
+.panel-brown {
+    border-color: transparent;
+}
+.panel-brown > .panel-heading {
+    color: #ebebeb;
+    background-color: #342301;
+    border-color: transparent;
+}
+.panel-brown > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: transparent;
+}
+.panel-brown > .panel-heading .badge {
+    color: #ebebeb;
+    background-color: #342301;
+}
+.panel-brown > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: transparent;
+}
+
 .panel-default {
     border-color: transparent;
 }
