@@ -1,6 +1,6 @@
 var canvas = document.querySelector("canvas");
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = 400;
 var ctx = canvas.getContext("2d");
 
 var TAU = 2 * Math.PI;
@@ -21,10 +21,10 @@ function Ball (startX, startY, startVelX, startVelY) {
     y: startVelY || Math.random() * 2 - 1
   };
   this.update = function(canvas) {
-    if (this.x > canvas.width + 50 || this.x < -50) {
+    if (this.x > canvas.width + 50 || this.x < -5) {
       this.vel.x = -this.vel.x;
     }
-    if (this.y > canvas.height + 50 || this.y < -50) {
+    if (this.y > canvas.height + 50 || this.y < -2) {
       this.vel.y = -this.vel.y;
     }
     this.x += this.vel.x;
@@ -32,22 +32,22 @@ function Ball (startX, startY, startVelX, startVelY) {
   };
   this.draw = function(ctx, can) {
     ctx.beginPath();
-    ctx.globalAlpha = .9;
-    ctx.fillStyle = '#7a8699';
-    ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 0, 0, TAU, false);
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = '#fff';
+    ctx.arc((1 + this.x) | 1, (1 + this.y) | 1, 1, 1, TAU, false);
     ctx.fill();
   }
 }
 
 var balls = [];
-for (var i = 0; i < canvas.width * canvas.height / (15*650); i++) {
+for (var i = 0; i < canvas.width * canvas.height / (15*700); i++) {
   balls.push(new Ball(Math.random() * canvas.width, Math.random() * canvas.height));
 }
 
 var lastTime = Date.now();
 function update() {
   var diff = Date.now() - lastTime;
-  for (var frame = 0; frame * 16.6667 < diff; frame++) {
+  for (var frame = 0; frame * 40.6667 < diff; frame++) {
     for (var index = 0; index < balls.length; index++) {
       balls[index].update(canvas);
     }
@@ -75,9 +75,15 @@ function draw() {
     for (var index2 = balls.length - 1; index2 > index; index2 += -1) {
       var ball2 = balls[index2];
       var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
-        if (dist < 100) {
-          ctx.strokeStyle = "#7a8699";
-          ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 1500);
+        if (dist < 150 && dist > 50) {
+          ctx.strokeStyle = "#a7afbd";
+          ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 15);
+          ctx.lineWidth = "2px";
+          ctx.moveTo((0.1 + ball.x) | 0, (0.1 + ball.y) | 0);
+          ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
+        } else if (dist < 50 && dist > 30) {
+          ctx.strokeStyle = "#fff";
+          ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 15);
           ctx.lineWidth = "4px";
           ctx.moveTo((0.1 + ball.x) | 0, (0.1 + ball.y) | 0);
           ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);
