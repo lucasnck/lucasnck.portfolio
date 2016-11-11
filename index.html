@@ -48,30 +48,30 @@
             }
             @media (max-width: 768px) {
                 .header {
-                    min-height: 500px;
+                    /*min-height: 500px;*/
                     font-size: 14px;
                 }
             }
             .canvas {
                 width: 100%; 
-                height: 300px;  
+                height: 100vh;  
             }
             @media (max-width: 768px) {
                 #canvas {
-                    display: none;
+                    /*display: none;*/
                 }
             }
         </style>
         <div class="header">
-            <a href="#" style="color: #fff; text-decoration: none;">
+            <a href="http://lucasnck.github.io" style="color: #fff; text-decoration: none;">
                 <h3>
                     <img src="image/lucasnck.jpg" class="profile-photo">
                     <br>
                     Lucas Ribeiro
                 </h3>
             </a>
+            <canvas id="canvas" class="canvas"></canvas>
         </div>
-        <canvas id="canvas" class="canvas"></canvas>
         <script src="js/canvas.js"></script>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -82,16 +82,24 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="lucasnck.github.io">lucasnck</a>
+                    <a class="navbar-brand" href="http://lucasnck.github.io">lucasnck</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#academic">academic</a></li>
+                        <li><a href="#articles">articles</a></li>
+                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
-                        <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
-                        <li><a href="#"><span class="fa fa-linkedin"></span> Linkedin</a></li>
-                        <li><a href="#"><span class="fa fa-github"></span> Github</a></li>
-                        <li><a href="#"><span class="fa fa-square-o"></span> Blog for Developers</a></li>
+                        <li><a href="http://facebook.com/luscanck"><span class="fa fa-facebook"></span> Facebook</a></li>
+                        <li><a href="http://twitter.com/luscanck"><span class="fa fa-twitter"></span> Twitter</a></li>
+                        <li><a href="https://br.linkedin.com/in/lucas-ribeiro-73a89511b"><span class="fa fa-linkedin"></span> Linkedin</a></li>
+                        <li><a href="http://github.com/lucasnck"><span class="fa fa-github"></span> Github</a></li>
+                        <li><a href="http://lucasnck.blogspot.com"><span class="fa fa-square-o"></span> Blog for Developers</a></li>
                     </ul>
                 </div>
             </div>
@@ -99,12 +107,12 @@
 
         <div class="container">
 
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="projects" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1 style="color: #333; position: relative">Projects</h1>
             </div>
 
             <div class="row">
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://creators.com.br" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -115,7 +123,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://farmup.com.br" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -126,7 +134,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://ucode.com.br" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -137,7 +145,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://github.com/lucasnck/exparser" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -148,7 +156,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://github.com/lucasnck/projectparser" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -159,7 +167,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://github.com/lucasnck/id3" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -170,7 +178,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://umed.com.br" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -181,7 +189,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://creators.com.br" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -192,7 +200,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://ucoffee.com.br" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -214,12 +222,12 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://lucasnck.blogspot.com" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
                                 <img src="image/tutorials.png" alt="..." width="200" height="200">
-                                <h5>tutorials</h5>
+                                <h5>Development Tutorials Blog</h5>
                             </div>
                         </div>
                     </div>
@@ -233,7 +241,47 @@
 
             <div class="row">
 
-                <div class="col-lg-12">
+                <div id="academic" class="col-lg-12">
+                    <h1 style="color: #333;">Academic Education</h1>
+                </div>
+
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-default panel-shadow" style="min-height: 400px; max-height: 400px;">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/21deabril.png" alt="..." width="200" height="200">
+                            </div>
+                            <div class="panel-body">
+                                <h4>EE 21 de Abril - Lins/SP</h4>
+                                <!--<p>The platform form managering all contents of the enterprise</p>-->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-default panel-shadow" style="min-height: 400px; max-height: 400px;">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/fatec.png" alt="..." width="200" height="200">
+                            </div>
+                            <div class="panel-body">
+                                <h4>Faculdade de Tecnologia de Lins - Professor Antônio Seabra</h4>
+                                <!--<p>The platform form managering all contents of the enterprise</p>-->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div id="articles" class="col-lg-12">
                     <h1 style="color: #333;">Articles</h1>
                 </div>
 
@@ -287,11 +335,39 @@
 
             <div class="row">
 
-                <div class="col-lg-12">
+                <div id="jobs" class="col-lg-12">
                     <h1 style="color: #333;">Job History</h1>
                 </div>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://ucode.com.br" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-black panel-shadow" style="min-height: 400px; max-height: 400px;">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/ucode.png" alt="..." width="200" height="200">
+                            </div>
+                            <div class="panel-body">
+                                <h4>2016/Current - uCODE</h4>
+                                <p>Businessman</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#contact" style="color: #fff; text-decoration: none;">
+                    <div class="col-lg-3">
+                        <div class="panel panel-black panel-shadow" style="min-height: 400px; max-height: 400px;">
+                            <div class="panel-heading" style="text-align: center;">
+                                <img src="image/freelancer.png" alt="..." width="200" height="200">
+                            </div>
+                            <div class="panel-body">
+                                <h4>2016/Current - FreeLance</h4>
+                                <p>Developer for web, desktop and mobile applications</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://www.educacao.sp.gov.br/" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
@@ -299,13 +375,13 @@
                             </div>
                             <div class="panel-body">
                                 <h4>2013/Current - Secretaria da Educação do Estado de São Paulo</h4>
-                                <p>Effective, Públic Employee.</p>
+                                <p>Effective, Public Employee.</p>
                             </div>
                         </div>
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://www.fateclins.edu.br/site/" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
@@ -319,7 +395,7 @@
                     </div>
                 </a>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                <a href="http://tnttec.com.br/" style="color: #fff; text-decoration: none;">
                     <div class="col-lg-3">
                         <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
                             <div class="panel-heading" style="text-align: center;">
@@ -340,7 +416,7 @@
                                 <img src="image/fundap.png" alt="..." width="200" height="50">
                             </div>
                             <div class="panel-body">
-                                <h4>2010 (6 meses) - FUNDAP</h4>
+                                <h4>2010 (6 mouths) - FUNDAP</h4>
                                 <p>High school internship in Program of the Government of the State of São Paulo</p>
                             </div>
                         </div>
@@ -361,7 +437,7 @@
 
             <div class="row">
 
-                <div class="col-lg-12">
+                <div id="skills" class="col-lg-12">
                     <h1 style="color: #333;">Skills</h1>
                 </div>
 
@@ -766,7 +842,7 @@
 
         <div class="container" style="color: #333;">
 
-            <address>
+            <address id="contact">
                 <strong>Contact</strong><br>
                 Rua Dom Pedro II, 2112, Jd. Santuário de Fátima<br>
                 Lins, SP 16403-160<br>
