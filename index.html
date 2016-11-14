@@ -1,83 +1,38 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:url"           content="https://lucasnck.github.io/" />
-	    <meta property="og:type"          content="website" />
-	    <meta property="og:title"         content="Lucas Ribeiro" />
-	    <meta property="og:description"   content="Lucasnck - Portfolio" />
-	    <meta property="og:image"         content="https://lucasnck.github.io/images/lucasnck.png" />
+        <meta name="description" content="Page scroll animation using CSS animate" />  
+        <meta name="keywords" content="css animation, loading effect, animate, scroll loading, scroll animation" />
+        <meta name="author" content="Jinson Abraham" />
+
         <title>Lucas Ribeiro - Portfolio</title>
+
+        <link rel="stylesheet" href="css/default.css"/>
         <link rel="stylesheet" href="css/super-hero.css"/>
-        <script src="js/scroll.js"></script>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
         <script src="https://use.fontawesome.com/213bbf86ff.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/viewportchecker.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!--<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>-->
-        <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,900|Roboto+Mono:400,700">-->
     </head>
     <body>
-        <style>
-            .profile-photo {
-                width: 150px;
-                height: 150px;
-                border-radius: 100%;
-            }
-            .panel-shadow {
-                -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.60);
-                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.60);
-            }
-            h3 {
-                font-size: 4em;
-                color: white;
-                letter-spacing: 2px;
-                pointer-events: none;
-                font-weight: 700;
-                position: absolute;
-                top: 30%;
-                left: 0;
-                right: 0;
-                text-align: center;
-            }
-            h5 {
-                color: #888;
-                letter-spacing: 2px;
-                pointer-events: none;
-            }
-            .header {
-                background-color: #586274; 
-                text-align: center; 
-                padding: 0px;
-                position: relative;
-            }
-            @media (max-width: 768px) {
-                .header {
-                    height: auto;
-                    min-height: 500px;
-                    max-height: 600px;
-                    font-size: 14px;
-                }
-            }
-            .canvas {
-                width: 100%; 
-                height: 100%;  
-            }
-            @media (max-width: 768px) {
-                #canvas {
-                    /*display: none;*/
-                }
-            }
-        </style>
         <div class="header">
-            <a href="http://lucasnck.github.io" style="color: #fff; text-decoration: none; z-index: 1500;">
-                <h3>
-                    <img src="image/lucasnck.png" class="profile-photo">
-                    <br>
-                    Lucas Ribeiro 
-                </h3>
-            </a>
+            <div class="post">
+                <a href="http://lucasnck.github.io" style="color: #fff; text-decoration: none; z-index: 1500;">
+                    <h3 style="margin-top: 15%;">
+                        <img src="image/lucasnck.png" class="profile-photo">
+                        <br>
+                        Lucas Ribeiro 
+                    </h3>
+                </a>
+            </div>
             <canvas id="canvas" class="canvas"></canvas>
+            <div class="post-tada">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Flucasnck.github.io%2F&width=200&layout=button_count&action=like&show_faces=true&share=false&height=65&appId" width="150" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
         </div>
         <script src="js/canvas.js"></script>
         <nav class="navbar navbar-default">
@@ -95,28 +50,13 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                     <ul class="nav navbar-nav">
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#academic">academic</a></li>
-                        <li><a href="#articles">articles</a></li>
+                        <li><a href="#academic">Academic</a></li>
+                        <li><a href="#articles">Articles</a></li>
                         <li><a href="#jobs">Jobs</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#contact">contact</a></li>
-                        <li>
-                            <a href="#" style="color: #000;">
-                                output: <img src="http://www.countmestat.com/count.php?id=31095&cmd=img_only" border="0">
-                                <script language="javascript" src="http://www.countmestat.com/count.php?id=31095&cmd=cookie"></script>
-                            </a>
-                        </li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li style="margin-top: 11px;">
-                            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Flucasnck.github.io%2F&width=108&layout=button_count&action=like&show_faces=true&share=true&height=46&appId" 
-				    width="180" 
-				    height="20" 
-				    style="border:none;overflow:hidden" 
-				    scrolling="no" 
-				    frameborder="0" 
-				    allowTransparency="true"></iframe>
-                        </li>
                         <li><a href="http://facebook.com/luscanck"><span class="fa fa-facebook"></span> Facebook</a></li>
                         <li><a href="http://twitter.com/luscanck"><span class="fa fa-twitter"></span> Twitter</a></li>
                         <li><a href="https://br.linkedin.com/in/lucas-ribeiro-73a89511b"><span class="fa fa-linkedin"></span> Linkedin</a></li>
@@ -125,82 +65,73 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> 
 
         <div class="container">
+            <div class="post">
 
-            <div id="projects" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h1 style="color: #333; position: relative">Projects</h1>
-            </div>
+                <div id="projects" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 style="color: #333; position: relative">Projects</h1>
+                </div>
 
-            <div class="row">
-                <a href="http://creators.com.br" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <span style="font-size: 200px; color: #888;" class="fa fa-gear fa-5x"></span>
-                                <h5>Web Artifact Generator</h5>
+                <div class="row">
+
+                    <a href="http://github.com/lucasnck/exparser" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/eXparser.png" alt="..." width="200" height="200">
+                                    <h5>eXparser</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="http://farmup.com.br" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/FarmUP.png" alt="..." width="200" height="200">
-                                <h5>FarmUP</h5>
+                    <a href="http://github.com/lucasnck/projectparser" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/ProjectParser.png" alt="..." width="200" height="200">
+                                    <h5>ProjectParser</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="http://ucode.com.br" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
-                                <h5>uCODE</h5>
+                    <a href="http://github.com/lucasnck/id3" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <span style="font-size: 200px; color: #888;" class="fa fa-tree fa-5x"></span>
+                                    <h5>ID3</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="http://github.com/lucasnck/exparser" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/eXparser.png" alt="..." width="200" height="200">
-                                <h5>eXparser</h5>
+                    <a href="http://farmup.com.br" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/FarmUP.png" alt="..." width="200" height="200">
+                                    <h5>FarmUP</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="http://github.com/lucasnck/projectparser" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ProjectParser.png" alt="..." width="200" height="200">
-                                <h5>ProjectParser</h5>
+                    <a href="http://ucode.com.br" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/ucode.png" alt="..." width="200" height="200">
+                                    <h5>uCODE</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="http://github.com/lucasnck/id3" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <span style="font-size: 200px; color: #888;" class="fa fa-tree fa-5x"></span>
-                                <h5>ID3</h5>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="http://umed.com.br" style="color: #fff; text-decoration: none;">
+                    <!--<a href="http://umed.com.br" style="color: #fff; text-decoration: none;">-->
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -209,9 +140,9 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                    <!--</a>-->
 
-                <a href="http://creators.com.br" style="color: #fff; text-decoration: none;">
+                    <!--<a href="http://creators.com.br" style="color: #fff; text-decoration: none;">-->
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -220,20 +151,31 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                    <!--</a>-->
 
-                <a href="http://ucoffee.com.br" style="color: #fff; text-decoration: none;">
+                    <!--<a href="http://creators.com.br" style="color: #fff; text-decoration: none;">-->
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default panel-shadow">
+                            <div class="panel-heading" style="text-align: center;">
+                                <span style="font-size: 200px; color: #888;" class="fa fa-gear fa-5x"></span>
+                                <h5>Web Artifact Generator</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</a>-->
+
+                    <!--<a href="http://uCOOK.com.br" style="color: #fff; text-decoration: none;">-->
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
                                 <span style="font-size: 200px; color: #888;" class="fa fa-coffee fa-5x"></span>
-                                <h5>uCOFFEE</h5>
+                                <h5>uCOOK</h5>
                             </div>
                         </div>
                     </div>
-                </a>
+                    <!--</a>-->
 
-                <a href="#" style="color: #fff; text-decoration: none;">
+                    <!--<a href="#" style="color: #fff; text-decoration: none;">-->
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="panel panel-default panel-shadow">
                             <div class="panel-heading" style="text-align: center;">
@@ -242,18 +184,145 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                    <!--</a>-->
 
-                <a href="http://lucasnck.blogspot.com" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/tutorials.png" alt="..." width="200" height="200">
-                                <h5>Development Tutorials Blog</h5>
+                    <a href="http://lucasnck.blogspot.com" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/tutorials.png" alt="..." width="200" height="200">
+                                    <h5>Development Tutorials Blog</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="post">
+                <div class="row">
+
+                    <div id="academic" class="col-lg-12">
+                        <h1 style="color: #333;">Academic Education</h1>
+                    </div>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow" style="height: 350px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/caxiasdosul.jpg" alt="..." width="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Elementary School 2007</h4>
+                                    <p>EEEF CLEMENTE PINTO - Caxias do Sul/RS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow" style="height: 350px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/21deabril.png" alt="..." width="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>High School 2010</h4>
+                                    <p>EE 21 de Abril - Lins/SP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow" style="height: 350px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/fatec.png" alt="..." width="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Undergraduate 2016</h4>
+                                    <p>Technologist in Systems Analysis and Development - Faculdade de Tecnologia de Lins - Professor Antônio Seabra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--<a href="#" style="color: #fff; text-decoration: none;">-->
+                    <div class="col-lg-3">
+                        <div class="panel panel-success panel-shadow" style="height: 350px;">
+                            <div class="panel-heading" style="text-align: left;">
+                                <span class="fa fa-graduation-cap fa-fw"></span> Graduate
+                            </div>
+                            <div class="panel-body">
+                                <h4>Opened</h4>
+                                <p></p>
                             </div>
                         </div>
                     </div>
-                </a>
+                    <!--</a>-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="post">
+
+                <div class="row">
+
+                    <div id="articles" class="col-lg-12">
+                        <h1 style="color: #333;">Articles</h1>
+                    </div>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-primary panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/artigo1.jpg" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>International Stage - 24º SIICUSP - Web Artifacts Generator support IDE Desktop</h4>
+                                    <!--<p>The platform form managering all contents of the enterprise</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-primary panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/artigo2.jpg" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Primary Stage - 24º SIICUSP - Gerador de Artefatos Web compatível com IDE Desktop</h4>
+                                    <!--<p>The platform form managering all contents of the enterprise</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-primary panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/artigo3.JPG" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Article II Congress of Scientific and Technological Initiation Fatec Lins - Gerador de Artefatos e Projetos</h4>
+                                    <!--<p>The platform form managering all contents of the enterprise</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
 
             </div>
 
@@ -261,189 +330,99 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="post">
 
-                <div id="academic" class="col-lg-12">
-                    <h1 style="color: #333;">Academic Education</h1>
+                <div class="row">
+
+                    <div id="jobs" class="col-lg-12">
+                        <h1 style="color: #333;">Job History</h1>
+                    </div>
+
+                    <a href="http://ucode.com.br" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/ucode.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>2016/Current - uCODE</h4>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#contact" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/freelancer.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>2016/Current - FreeLance</h4>
+                                    <p>Developer for web, desktop and mobile applications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="http://www.educacao.sp.gov.br/" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/sesp.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>2013/Current - Secretaria da Educação do Estado de São Paulo</h4>
+                                    <p>Effective, Public Employee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="http://www.fateclins.edu.br/site/" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/fatec.png" alt="..." width="200" height="150">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>2015 (2 mouths) - Fatec Lins</h4>
+                                    <p>Undergraduate, internship as Data Structure Monitor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="http://tnttec.com.br/" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/tnt.png" alt="..." width="200" height="150">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>2015 (1 mouth) - TNT Technology</h4>
+                                    <p>Undergraduate, internship in software development company</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/fundap.png" alt="..." width="200" height="50">
+                                </div>
+                                <div class="panel-body">
+                                    <h4>2010 (6 mouths) - FUNDAP</h4>
+                                    <p>High School, internship in Program of the Government of the State of São Paulo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-default panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/21deabril.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h4>EE 21 de Abril - Lins/SP</h4>
-                                <!--<p>The platform form managering all contents of the enterprise</p>-->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-default panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/fatec.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h4>Faculdade de Tecnologia de Lins - Professor Antônio Seabra</h4>
-                                <!--<p>The platform form managering all contents of the enterprise</p>-->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div id="articles" class="col-lg-12">
-                    <h1 style="color: #333;">Articles</h1>
-                </div>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-primary panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/artigo1.jpg" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h4>International Stage - 24º SIICUSP - Web Artifacts Generator support IDE Desktop</h4>
-                                <!--<p>The platform form managering all contents of the enterprise</p>-->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-primary panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/artigo2.jpg" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h4>Primary Stage - 24º SIICUSP - Gerador de Artefatos Web compatível com IDE Desktop</h4>
-                                <!--<p>The platform form managering all contents of the enterprise</p>-->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-primary panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/artigo3.JPG" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h4>Article II Congress of Scientific and Technological Initiation Fatec Lins - Gerador de Artefatos e Projetos</h4>
-                                <!--<p>The platform form managering all contents of the enterprise</p>-->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="container">
-
-            <div class="row">
-
-                <div id="jobs" class="col-lg-12">
-                    <h1 style="color: #333;">Job History</h1>
-                </div>
-
-                <a href="http://ucode.com.br" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-black panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/ucode.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h4>2016/Current - uCODE</h4>
-                                <p>Businessman</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#contact" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-black panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/freelancer.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h4>2016/Current - FreeLance</h4>
-                                <p>Developer for web, desktop and mobile applications</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="http://www.educacao.sp.gov.br/" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/sesp.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body">
-                                <h4>2013/Current - Secretaria da Educação do Estado de São Paulo</h4>
-                                <p>Effective, Public Employee.</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="http://www.fateclins.edu.br/site/" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/fatec.png" alt="..." width="200" height="150">
-                            </div>
-                            <div class="panel-body">
-                                <h4>2015 (2 mouths) - Fatec Lins</h4>
-                                <p>Higher education internship as Data Structure Monitor</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="http://tnttec.com.br/" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/tnt.png" alt="..." width="200" height="150">
-                            </div>
-                            <div class="panel-body">
-                                <h4>2015 (1 mouth) - TNT Technology</h4>
-                                <p>Higher education internship in software development company</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-info panel-shadow" style="min-height: 400px; max-height: 400px;">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/fundap.png" alt="..." width="200" height="50">
-                            </div>
-                            <div class="panel-body">
-                                <h4>2010 (6 mouths) - FUNDAP</h4>
-                                <p>High school internship in Program of the Government of the State of São Paulo</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
 
             </div>
 
@@ -457,434 +436,462 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="post">
 
-                <div id="skills" class="col-lg-12">
-                    <h1 style="color: #333;">Skills</h1>
-                </div>
+                <div class="row">
 
-                <div class="col-lg-3">
-                    <a href="#" style="color: #fff; text-decoration: none;"
-                       data-toggle="tooltip" 
-                       title="Java EE, Java SE, Java ME, Web, Desktop, Mobile." 
-                       data-placement="bottom">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/java.png" alt="..." width="200" height="200">
+                    <div id="skills" class="col-lg-12">
+                        <h1 style="color: #333;">Skills</h1>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a href="#" style="color: #fff; text-decoration: none;"
+                           data-toggle="tooltip" 
+                           title="Java EE, Java SE, Java ME, Web, Desktop, Mobile." 
+                           data-placement="bottom">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/java.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Java</h1>
+                                </div>
                             </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Java</h1>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a href="#" style="color: #fff; text-decoration: none;"
+                           data-toggle="tooltip" 
+                           title="Configurations and usage." 
+                           data-placement="bottom">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/hibernate.svg" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Hibernate</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a href="#" style="color: #fff; text-decoration: none;"
+                           data-toggle="tooltip" 
+                           title="All contents of the framework" 
+                           data-placement="bottom">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/jsf.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>JSF</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a href="#" style="color: #fff; text-decoration: none;"
+                           data-toggle="tooltip" 
+                           title="App for android development on Android Studio and Eclipse" 
+                           data-placement="bottom">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/android.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Android</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a href="#" style="color: #fff; text-decoration: none;"
+                           data-toggle="tooltip" 
+                           title="Postgres database" 
+                           data-placement="bottom">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/PostgreSQL.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>PostgreSQL</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/JQuery.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>JQuery</h1>
+                                </div>
                             </div>
                         </div>
                     </a>
-                </div>
 
-                <div class="col-lg-3">
-                    <a href="#" style="color: #fff; text-decoration: none;"
-                       data-toggle="tooltip" 
-                       title="Configurations and usage." 
-                       data-placement="bottom">
-                        <div class="panel panel-danger panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/hibernate.svg" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Hibernate</h1>
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/javascript.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>JavaScript</h1>
+                                </div>
                             </div>
                         </div>
                     </a>
-                </div>
 
-                <div class="col-lg-3">
-                    <a href="#" style="color: #fff; text-decoration: none;"
-                       data-toggle="tooltip" 
-                       title="All contents of the framework" 
-                       data-placement="bottom">
-                        <div class="panel panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/jsf.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>JSF</h1>
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/html5.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>HTML5</h1>
+                                </div>
                             </div>
                         </div>
                     </a>
-                </div>
 
-                <div class="col-lg-3">
-                    <a href="#" style="color: #fff; text-decoration: none;"
-                       data-toggle="tooltip" 
-                       title="App for android development on Android Studio and Eclipse" 
-                       data-placement="bottom">
-                        <div class="panel panel-green panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/android.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Android</h1>
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/CSS3.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>CSS3</h1>
+                                </div>
                             </div>
                         </div>
                     </a>
-                </div>
 
-                <div class="col-lg-3">
-                    <a href="#" style="color: #fff; text-decoration: none;"
-                       data-toggle="tooltip" 
-                       title="Postgres database" 
-                       data-placement="bottom">
-                        <div class="panel panel-black panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/PostgreSQL.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>PostgreSQL</h1>
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-black panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Primefaces.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Primefaces</h1>
+                                </div>
                             </div>
                         </div>
                     </a>
-                </div>
 
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-info panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/JQuery.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>JQuery</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-brown panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/javascript.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>JavaScript</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-danger panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/html5.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>HTML5</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-info panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/CSS3.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>CSS3</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-black panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Primefaces.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Primefaces</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Bootstrap.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Bootstrap</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <h1 style="padding: 3px;">JPA</h1>
-                            </div>
-                            <!--                                                        <div class="panel-body">
-                                                                                        <h1>JPA</h1>
-                                                                                    </div>-->
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <h1 style="padding: 3px;">Criteria API</h1>
-                            </div>
-                            <!--                            <div class="panel-body">
-                                                            <h1>Criteria API</h1>
-                                                        </div>-->
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-green panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/MVC.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>MVC</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/UML.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>UML</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <div class="col-lg-3">
-                    <a href="#" style="color: #fff; text-decoration: none;"
-                       data-toggle="tooltip" 
-                       title="Knowledge but not experience" 
-                       data-placement="bottom">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/SCRUM.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>SCRUM</h1>
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Bootstrap.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Bootstrap</h1>
+                                </div>
                             </div>
                         </div>
                     </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-info panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <h1 style="padding: 3px;">JPA</h1>
+                                </div>
+                                <!--                                                        <div class="panel-body">
+                                                                                            <h1>JPA</h1>
+                                                                                        </div>-->
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-info panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <h1 style="padding: 3px;">Criteria API</h1>
+                                </div>
+                                <!--                            <div class="panel-body">
+                                                                <h1>Criteria API</h1>
+                                                            </div>-->
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/MVC.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>MVC</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/UML.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>UML</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="col-lg-3">
+                        <a href="#" style="color: #fff; text-decoration: none;"
+                           data-toggle="tooltip" 
+                           title="Knowledge but not experience" 
+                           data-placement="bottom">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/SCRUM.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>SCRUM</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/JSON.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>JSON</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Apache.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Apache</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Glassfish.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Glassfish</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/PostgreSQL.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>PostgreSQL</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Oracle.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Oracle</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/restful.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>JAX-RS</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Fireworks.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Fireworks</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Photoshop.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Photoshop</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Word 2016.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Word 2016</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Excel 2016.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Excel 2016</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Windows.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Windows</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/Linux.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>Linux</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div class="col-lg-3">
+                            <div class="panel panel-default panel-shadow">
+                                <div class="panel-heading" style="text-align: center;">
+                                    <img src="image/UBUNTU.png" alt="..." width="200" height="200">
+                                </div>
+                                <div class="panel-body hidden-lg hidden-md display-sm display-xs">
+                                    <h1>UBUNTU</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-black panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/JSON.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>JSON</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-danger panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Apache.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Apache</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Glassfish.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Glassfish</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-info panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/PostgreSQL.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>PostgreSQL</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Oracle.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Oracle</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-green panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/restful.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>JAX-RS</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Fireworks.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Fireworks</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-warning panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Photoshop.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Photoshop</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Word 2016.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Word 2016</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-green panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Excel 2016.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Excel 2016</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-default panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Windows.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Windows</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-black panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/Linux.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>Linux</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" style="color: #fff; text-decoration: none;">
-                    <div class="col-lg-3">
-                        <div class="panel panel-danger panel-shadow">
-                            <div class="panel-heading" style="text-align: center;">
-                                <img src="image/UBUNTU.png" alt="..." width="200" height="200">
-                            </div>
-                            <div class="panel-body hidden-lg hidden-md display-sm display-xs">
-                                <h1>UBUNTU</h1>
-                            </div>
-                        </div>
-                    </div>
-                </a>
 
             </div>
 
         </div>
 
-        <div class="container jumbotron">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <img src="image/lucasnck.jpg" class="profile-photo">
+        <div class="container" style="color: #333;">
+
+            <div class="post">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <img src="image/lucasnck.jpg" class="profile-photo">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <address id="contact">
+                            <strong><span class="fa fa-user"></span> Contact</strong><br>
+                            <span class="fa fa-map-marker"></span> Rua Dom Pedro II, 2112, Jd. Santuário de Fátima<br>
+                            Lins, SP 16403-160<br>
+                            <span class="fa fa-whatsapp"></span> (14) 99630-9404
+                        </address>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <address>
+                            <strong><span class="fa fa-share"></span> Email</strong><br>
+                            <span class="fa fa-envelope"></span> <a href="mailto:#"> lucasnck@hotmail.com</a>
+                        </address>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        visits <img src="http://www.countmestat.com/count.php?id=31095&cmd=img_only" border="0">
+                        <script language="javascript" src="http://www.countmestat.com/count.php?id=31095&cmd=cookie"></script>
+                    </div>
+
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <address id="contact">
-                        <strong><span class="fa fa-user"></span> Contact</strong><br>
-                        <span class="fa fa-map-marker"></span> Rua Dom Pedro II, 2112, Jd. Santuário de Fátima<br>
-                        Lins, SP 16403-160<br>
-                        <span class="fa fa-whatsapp"></span> (14) 99630-9404
-                    </address>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <address>
-                        <strong><span class="fa fa-share"></span> Email</strong><br>
-                        <a href="mailto:#"><span class="fa fa-envelope"></span> lucasnck@hotmail.com</a>
-                    </address>
-                </div>
+
             </div>
+
         </div>
 
-        <div style="margin-top: 40px;"></div>
+        <!--<div style="margin-top: 40px;"></div>-->
+
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                jQuery('.post').addClass("hidden").viewportChecker({
+                    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+                    offset: 100
+                });
+                jQuery('.post-tada').addClass("hidden").viewportChecker({
+                    classToAdd: 'visible animated tada', // Class to add to the elements when they are visible
+                    offset: 100
+                });
+            });
+        </script>
 
     </body>
 </html>

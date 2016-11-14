@@ -1,0 +1,59 @@
+.profile-photo {
+    width: 150px!important;
+    height: 150px!important;
+    border-radius: 100%!important;
+}
+.panel-shadow {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.60)!important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.60)!important;
+}
+h3 {
+    font-size: 4em!important;
+    color: white!important;
+    letter-spacing: 2px!important;
+    pointer-events: none!important;
+    font-weight: 700!important;
+    position: absolute!important;
+    top: 30%!important;
+    left: 0!important;
+    right: 0!important;
+    text-align: center!important;
+}
+h5 {
+    color: #888!important;
+    letter-spacing: 2px!important;
+    pointer-events: none!important;
+}
+.header {
+    background-color: #586274!important; 
+    text-align: center!important; 
+    padding: 0px!important;
+    position: relative!important;
+}
+@media (max-width: 768px) {
+    .header {
+        /*min-height: 500px;*/
+        font-size: 14px!important;
+    }
+}
+.canvas {
+    width: 100%!important; 
+    height: 100vh!important;  
+}
+@media (max-width: 768px) {
+    #canvas {
+        /*display: none!important;*/
+    }
+}
+.post-tada {
+    z-index: 1000;
+    position: absolute;
+    margin-top: -30vh; 
+    margin-left: 46%;
+}
+@media (max-width: 768px) {
+    .post-tada {
+        margin-top: -30vh; 
+        margin-left: 38%;
+    }
+}

@@ -195,7 +195,7 @@ td,
 th {
     padding: 0;
 }
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css 
 @media print {
     *,
     *:before,
@@ -5455,8 +5455,6 @@ button.list-group-item-danger.active:focus {
     background-color: #4e5d6c;
     border: 1px solid transparent;
     border-radius: 0;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .panel-body {
     padding: 15px;
@@ -5686,7 +5684,7 @@ button.list-group-item-danger.active:focus {
     border-bottom: 1px solid transparent;
 }
 
-/*custom*/
+custom
 
 .panel-black {
     border-color: transparent;
@@ -6593,9 +6591,9 @@ button.close {
     background-color: transparent;
     border: 0;
 }
-.hidden {
+/*.hidden {
     display: none !important;
-}
+}*/
 .affix {
     position: fixed;
 }
