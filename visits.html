@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Page scroll animation using CSS animate" />  
+        <meta name="keywords" content="css animation, loading effect, animate, scroll loading, scroll animation" />
+        <meta name="author" content="Jinson Abraham" />
+
+        <title>Lucas Ribeiro - Portfolio</title>
+
+        <link rel="stylesheet" href="css/default.css"/>
+        <link rel="stylesheet" href="css/super-hero.css"/>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <script src="https://use.fontawesome.com/213bbf86ff.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/viewportchecker.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="post">
+                <a href="http://lucasnck.github.io" style="color: #fff; text-decoration: none; z-index: 1500;">
+                    <h3 style="margin-top: 15%;">
+                        <img src="image/lucasnck.png" class="profile-photo">
+                        <br>
+                        Lucas Ribeiro 
+                    </h3>
+                </a>
+            </div>
+            <canvas id="canvas" class="canvas"></canvas>
+            <div class="post-tada">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Flucasnck.github.io%2F&width=200&layout=button_count&action=like&show_faces=true&share=false&height=65&appId" width="150" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+        </div>
+        <script src="js/canvas.js"></script>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://lucasnck.github.io">lucasnck</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#academic">Academic</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://facebook.com/luscanck"><span class="fa fa-facebook"></span> Facebook</a></li>
+                        <li><a href="http://twitter.com/luscanck"><span class="fa fa-twitter"></span> Twitter</a></li>
+                        <li><a href="https://br.linkedin.com/in/lucas-ribeiro-73a89511b"><span class="fa fa-linkedin"></span> Linkedin</a></li>
+                        <li><a href="http://github.com/lucasnck"><span class="fa fa-github"></span> Github</a></li>
+                        <li><a href="http://lucasnck.blogspot.com"><span class="fa fa-square-o"></span> Blog for Developers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+
+        <div class="container">
+            <div class="post">
+                
+                <a href="https://www.clustrmaps.com/map/Lucasnck.github.io">
+                    <h1>ClustrMaps</h1>
+                </a>
+
+                <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=9tbr&d=vxjcgVIAcjACAsNktRG1HoAZoabcBXKgPJea_wVkBoI"></script>
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                jQuery('.post').addClass("hidden").viewportChecker({
+                    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+                    offset: 100
+                });
+                jQuery('.post-tada').addClass("hidden").viewportChecker({
+                    classToAdd: 'visible animated tada', // Class to add to the elements when they are visible
+                    offset: 100
+                });
+            });
+        </script>
+
+    </body>
+</html>
