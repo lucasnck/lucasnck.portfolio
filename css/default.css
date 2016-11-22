@@ -43,6 +43,7 @@ h5 {
 @media (max-width: 768px) {
     #canvas {
         /*display: none!important;*/
+        height: 100%!important;  
     }
 }
 .post-tada {
@@ -57,8 +58,8 @@ h5 {
         margin-left: 38%;
     }
     .profile-photo {
-        width: 80px!important;
-        height: 80px!important;
+        width: 100px!important;
+        height: 100px!important;
         border-radius: 100%!important;
     }
     h3 {
