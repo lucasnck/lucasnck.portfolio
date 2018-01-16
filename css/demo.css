@@ -18,7 +18,7 @@ footer.footer{
 }
 /* Required */
 .hidden{
-	opacity: 0;
+	/* opacity: 0; */
 }
 
 .visible{
